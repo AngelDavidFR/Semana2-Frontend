@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos</title>
+    <link rel="stylesheet" href="/style.css">
+    
+</head>
+<body>
+    <section class="header1">
+        <div>
+       
+            <img src="/asset/logo1.png" alt="" height="100" width="100"  ><h1>Pastelería Flores</h1>
+           </div>
+           <div>
+             <p>Dirección:Calle 2 Norte #15556 ,Tehuacán,Puebla,México <br>
+                Telefono:2381009882 <br>
+                 Horario de atencion: 8:00 a.m- 10:00 p.m </p>
+           </div>
+        </section>
+   <section class="cent">
+
+       <h2>Pedidos</h2>
+       <form action="pedido.js">
+           <div class="pedLe">
+
+               
+               <label for="nombrePed">Nombre Completo </label>
+               <input type="text" name="nombrePed">   
+               <label for="phone">Teléfono </label>
+               <input type="tel" name="phone">    
+               <label for="correo">Correo electrónico </label>
+               <input type="email" name="correo">   
+               
+            </div>
+            
+   <h3>Tipo de Pastel</h3> 
+   <div class="pedLe">
+                
+       <p>Elegir el tipo de pastel que quiere</p>
+       <h3>Normal</h3>
+       <label ><input type="radio" name="Sabor">Fresa</label>
+       <label ><input type="radio" name="Sabor">Chocolate</label>
+       <label ><input type="radio" name="Sabor">Limón</label>
+       <label ><input type="radio" name="Sabor">Vainilla</label>
+       <h3>Combinados</h3> 
+       <h4>Sabores</h4>
+       <label for="Combinados1">Primer sabor</label><br>
+       <select name="Combinados1" id="comb1">
+           <option value="" selected disabled hidden></option>
+           <option >Fresa</option>
+           <option >Chocolate</option>
+           <option>Limón</option>
+           <option>Vainilla</option> 
+        </select>
+        <br>
+        <label for="Combinados2">Segundo sabor</label><br>
+        <select name="Combinados2" id="comb2" >
+            <option value="" selected disabled hidden></option>
+            
+            <option >Fresa</option>
+            <option >Chocolate</option>
+    <option>Limón</option>
+    <option>Vainilla</option> 
+</select>
+<h4>Adornos</h4>
+<label ><input type="radio" name="Nombre">Nombre <br> <input type="text" placeholder="Introduce el nombre que quieras en tu pastel" name="NombreText" class="textPedido"></label> <br>
+<section>
+
+    <label ><input type="radio" name="Flores"> Flores</label><br>
+    <label ><input type="radio" name="Fruta"> Fruta</label><br>
+    <label ><input type="radio" name="Personaje"> Personaje <br> <input type="text" placeholder="Introduce el nombre que quieras en tu pastel" name="nombrePersonaje" class="textPedido"></label>
+</section>
+    <h4>Otros </h4>
+<input type="text" placeholder="Introduzca una descripción extra del pedido" name="desExtra" class="textPedido"><br>
+</div>
+<input type="reset">
+<input type="submit">
+</form>
+
+</section> 
+</body>
+
+</html>
